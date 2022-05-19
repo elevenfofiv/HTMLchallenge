@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+
+section {
+  width: 100%;
+}
+.header {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffce33;
+  padding-bottom: 2%;
+  position: absolute;
+  z-index: 0;
+}
+
+.header_content {
+  width: 33%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.header_content:first-child {
+  justify-content: flex-start;
+  padding-left: 3%;
+}
+
+.header_content:nth-child(2) {
+  justify-content: center;
+}
+
+.header_content:last-child {
+  justify-content: flex-end;
+  padding-right: 3%;
+}
+
+.header_content i {
+  font-size: 200%;
+}
+
+.header_content span {
+  font-size: 230%;
+  font-weight: 400;
+}
+
+.searchbar {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+.searchbar_window {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  top: 220%;
+  background-color: white;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 50px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.searchbar_window input {
+  width: 90%;
+  height: 100%;
+  margin-left: 5%;
+  padding-left: 1%;
+  font-size: 160%;
+  opacity: 0.5;
+  border: none;
+}
+
+.searchbar_window button {
+  position: relative;
+  right: 5%;
+  top: 0%;
+  background-color: white;
+  border: none;
+  opacity: 0.5;
+  font-size: 150%;
+}
