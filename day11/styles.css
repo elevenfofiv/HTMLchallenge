@@ -269,3 +269,64 @@ body {
   color: white;
   font-size: 150%;
 }
+
+.playing_now_song_info {
+  width: 100%;
+  height: 60%;
+}
+
+.play_control_box {
+  width: 100%;
+  height: 35%;
+}
+
+.playing_now_album {
+  width: 100%;
+  height: 65%;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.playing_now_album img {
+  width: 65%;
+  height: 80%;
+  border-radius: 25px;
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.playing_now_song_singer {
+  width: 100%;
+  height: 35%;
+  padding: 5% 5% 10% 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.playing_now_song_singer h5 {
+  margin: 0%;
+}
+
+.playing_now_song_singer h5:first-child {
+  font-size: 250%;
+}
+
+.playing_now_song_singer h5:last-child {
+  font-size: 150%;
+  opacity: 0.4;
+}
+
+.playing_bar_satus {
+  width: 100%;
+  height: 20%;
+}
+
+.playing_console {
+  width: 100%;
+  height: 80%;
+}
