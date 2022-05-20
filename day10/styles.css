@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Inconsolata&family=Open+Sans&display=swap");
 
-/* * {
-  box-sizing: border-box;
-} */
 html {
   width: 100vw;
   height: 200vh;
@@ -14,24 +11,25 @@ body {
   margin: 0px;
   padding: 10px;
   font-family: "Inconsolata", monospace;
+  box-sizing: border-box;
 }
 
-section {
-  width: 100%;
-}
 .header {
+  width: 100%;
   height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ffce33;
-  padding-bottom: 2%;
+  padding: 1% 1% 2% 1%;
   z-index: 0;
+  box-sizing: border-box;
 }
 
 .header_content {
   width: 33%;
   height: 10%;
+  padding: 1%;
   display: flex;
   align-items: center;
 }
@@ -52,27 +50,31 @@ section {
 
 .header_content i {
   font-size: 200%;
+  padding: 5%;
 }
 
 .header_content span {
   font-family: inherit;
   font-size: 230%;
   font-weight: 400;
+  padding: 5%;
 }
 
 .searchbar {
   width: 100%;
-  height: 8%;
+  height: 4%;
   display: flex;
-  position: absolute;
+  position: relative;
   justify-content: center;
   z-index: 0;
+  padding: 0% 1% 0% 1%;
+  box-sizing: border-box;
 }
 .searchbar_window {
   width: 80%;
   height: 100%;
   display: flex;
-  position: relative;
+  position: absolute;
   top: -50%;
   background-color: white;
   border: 1px solid white;
@@ -82,34 +84,36 @@ section {
 }
 
 .searchbar_window input {
-  width: 90%;
+  width: 70%;
   height: 100%;
-  margin-left: 5%;
-  padding-left: 1%;
+  margin: 0% 5% 0% 5%;
+  padding: 0% 1% 0% 1%;
   font-size: 160%;
   opacity: 0.5;
   border: none;
 }
 
 .searchbar_window button {
-  position: relative;
-  right: 5%;
-  top: 0%;
   background-color: white;
   border: none;
   opacity: 0.5;
   font-size: 150%;
+  padding: 1%;
+  padding-left: 4%;
+  box-sizing: border-box;
 }
 
 main.book_content {
   width: 100%;
   height: 80%;
-  margin-top: 10%;
+  padding: 2%;
+  box-sizing: border-box;
 }
 
 .book_content div.area {
   width: 100%;
   height: 33%;
+  padding: 1%;
 }
 
 .title {
@@ -123,14 +127,16 @@ main.book_content {
   font-family: inherit;
   font-size: 5vh;
   font-weight: 400;
-  padding-left: 5%;
+  padding-left: 2%;
   object-fit: contain;
 }
 
-.content {
+.book_of_the_day__content {
   width: 100%;
   height: 80%;
   display: flex;
+  padding: 1%;
+  box-sizing: border-box;
 }
 
 .image,
@@ -140,22 +146,37 @@ main.book_content {
 
 .image {
   width: 32%;
+  padding: 1%;
+  box-sizing: border-box;
 }
 
 .description {
   width: 68%;
+  padding: 1%;
+  box-sizing: border-box;
 }
 
 .image img {
-  margin-left: 8%;
-  width: 80%;
+  width: 100%;
   height: 100%;
   border-radius: 25px;
   object-fit: contain;
 }
 
-.book_of_the_day__info > div {
+.book_of_the_day__info > div:first-child {
   height: 20%;
+}
+.book_of_the_day__info > div:nth-child(2) {
+  height: 15%;
+}
+.book_of_the_day__info > div:nth-child(3) {
+  height: 15%;
+}
+.book_of_the_day__info > div:nth-child(4) {
+  height: 25%;
+}
+.book_of_the_day__info > div:last-child {
+  height: 25%;
 }
 
 .book_title {
@@ -169,36 +190,44 @@ main.book_content {
 }
 
 .book_of_the_day__gerne-tags {
-  width: 55%;
+  width: 65%;
   height: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.book_of_the_day__gerne-tags__column {
+  width: 40%;
+  height: 100%;
+  padding: 1%;
+  box-sizing: border-box;
 }
 
 .book_of_the_day__gerne-tag {
-  width: 35%;
+  width: 100%;
   height: 80%;
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f7f7f7;
+  background-color: whitesmoke;
 }
 
-.book_of_the_day__gerne-tag:last-child {
-  margin-left: 10%;
-}
-
-.book_of_the_day__gerne-tag span {
-  font-size: 150%;
+.book_of_the_day__gerne-tag h5 {
+  font-size: 120%;
+  margin: 0%;
 }
 
 .book_of_the_day__score {
-  width: 30%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1%;
+  box-sizing: border-box;
 }
 
 .book_of_the_day__score i {
@@ -213,6 +242,8 @@ main.book_content {
 .book_of_the_day__btns {
   width: 70%;
   display: flex;
+  padding: 1% 1% 4% 1%;
+  box-sizing: border-box;
 }
 
 .book_of_the_day__btn {
@@ -228,7 +259,7 @@ main.book_content {
 }
 
 .book_of_the_day__btn i {
-  font-size: 300%;
+  font-size: 180%;
 }
 
 .image-container {
@@ -253,4 +284,68 @@ main.book_content {
 
 .book_of_the_day__btn:last-child span {
   font-size: 200%;
+}
+
+.top_adventure__content {
+  height: 80%;
+  display: flex;
+  padding: 1%;
+  overflow-x: auto;
+}
+
+.top_adventure__content::-webkit-scrollbar {
+  display: none;
+}
+
+.top_adventure__content__book {
+  height: 80%;
+  padding: 1%;
+}
+
+.top_adventure__content__book_cover {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_adventure__content__book_cover img {
+  width: 230px;
+  padding: 5%;
+  box-sizing: border-box;
+  object-fit: contain;
+  border-radius: 8%;
+}
+
+.top_adventure__content_score {
+  width: 100%;
+  height: 20%;
+  padding: 0.1% 10% 0.1% 10%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top_adventure__content_score i {
+  font-size: 120%;
+  color: gold;
+}
+
+.popular_author__content {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.popular_author__bio h5 {
+  margin: 0%;
+  font-size: 180%;
+}
+
+.popular_author__bio p {
+  font-size: 80%;
 }
